@@ -90,6 +90,7 @@
                 })
                 .catch((error) => {
                     console.log('로그인 실패')
+                    alert("!! 이매일 또는 비밀번호가 다릅니다. 다시 시도 하세요.")
                     const errorCode = error.code;
                     const errorMessage = error.message;
                 });
